@@ -30,6 +30,14 @@ degMapped = map2(deg, 0, 90, -90, 90, SINUSOIDAL, BOTH );
 rotate( radians(degMapped));
 deg = (deg + 1) % 90;
 
+
+//if key pressed text gets bigger
+if (keyIsPressed) {
+  textSize(150);
+
+} else {
+  textSize(72);
+}
 text("BOUNCY", 0, yPos);
 pop();
 if (y > height ||  y < 0) {
@@ -37,6 +45,9 @@ if (y > height ||  y < 0) {
 }
 
  y = y + speed;
+
+
+
   
  
 
